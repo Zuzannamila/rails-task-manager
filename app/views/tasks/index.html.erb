@@ -1,0 +1,5 @@
+<h1>My tasks</h1>
+<% @tasks.each  do |task| %>
+  <i class="far fa-check-square" style=></i>
+  <h4><%= link_to task.title, task_path(task.id) %></h4>
+<% end %>
